@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image" href="2.jpg">
+    <link rel="stylesheet" href="fm.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trial 4</title>
+</head>
+<body>
+    <div class="main">
+<div class="first"><div class="s">WELCOME TO SUMMIT BANK,<br> In order to become a client you must fill the clients application and after then agree with or terms and conditions, see you there... </div>  
+    </div>
+    <div class="innerdiv4">
+        <div class="signup">
+            <h1>Please fill in the information</h1>
+            <form action="terms and conditions.html" method="POST" onsubmit="return checkCheckBox(this)">       
+             <label>first name </label><input type="text" name="name" required/><br>
+             <label>last name </label><input type="text" name="name" required/><br>
+             <label>phone number</label><input type="text" name="name" required/><br>
+            <label> email</label><input type="email" name="useremail"/><br>
+            <label>new password</label><input type="password" name="useremail"/><br>
+            <label>confirm password</label><input type="password" name="useremail"/><br>
+            <label>gender:</label>
+               <label>female</label><input type="radio" name="gender" value="male"/>
+               <label>male</label><input type="radio" name="gender" value="female"/><br>
+               <br>
+               <label>  Year of application</label><input type="number" name="yearofstudy" min="1" max="5"/><br> 
+               
+                <label>  year of birth</label><input type="date"/><br>
+                    <label>acount type</label><br>
+                        <label>student</label><input type="radio" name="level" value="A-level"/><br>
+                            <label> adult</label><input type="radio" name="level" value="A-level"/><br>
+
+              <label>country</label>
+               <select name="coutry">
+                   <option value="Uganda">Uganda</option>
+                   <option value="kenya">kenya</option>
+                   <OPTIOn value="tanzania">tanzania</OPTIOn> 
+                   <OPTIOn value="rwanda">rwanda</OPTIOn>
+                   <OPTIOn value="sudan">sudan</OPTIOn>
+                   <OPTIOn value="zimbabwe">zimbabwe</OPTIOn>
+               </select><br>
+
+               <label>district</label><input type="text" ><br>
+               <label>upload passpport photo</label><input type="file" name="photo" multiple accept="image/*" id="photo" required/><br>
+               <b>By submitting, I agree that all info entered was done accurately & truthfully.</b><br />
+               I accept: <input type="checkbox" value="0" name="agree">
+               <input type="submit" value="Submit form"><br>
+               <input type="button" value="Exit" onclick="document.location.href='index.html';">
+            </form>
+            <SCRIPT language=JavaScript>    
+                    function checkCheckBox(f){
+                    if (f.agree.checked == false )
+                    {
+                    alert('Please agree before proceeding,check the box to continue.');
+                    return false;
+                    }else
+                    return true;
+                    }
+            </SCRIPT>
+        </div>
+    </div>
+  
+    <style>
+    body{
+        background-image: url("18.jpg");
+
+    }
+    .h{
+        color: rgba(14, 14, 15, 0.582);
+        font-size: 25px;
+        border: 1px solid;
+        background: hsl(83, 6%, 73%);
+        border-radius: 20px;
+        width: 800px;
+        height: 500px;
+       margin-left: 20px;
+    }
+    input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=file],
+input[type=submit],
+select{
+    border:1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 5px;
+    color: #222;
+    display: block;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+.signup{
+    margin: 40px;
+    padding-left: 210px;
+}
+
+input[type=submit],
+input[type=button]{
+border:1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 5px;
+    color: rgb(34, 34, 34);
+    display: block;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: rgb(233, 8, 203);
+    color: rgb(186, 240, 38) ;
+    font-size: 17px;}
+input[type="submit"]:hover{
+    background: rgb(51, 47, 47);
+    color: white;
+}
+.s{
+    border: 1px solid;
+    background: blue;
+    border-radius: 10px;
+    
+}
+label{
+    font-size: 30px;
+}
+
+    </style>
+</div>
+
+</body>
+</html>

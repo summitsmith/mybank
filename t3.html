@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>another day, anotheer winner , let me help u choose one...</h1>
+   <p id="winner">
+       <b>platers</b>
+     <ul>
+         <li>player 1</li>
+         <li>player 2</li>
+
+     </ul>
+   </p>
+   <p id="winner">
+       <b>controllers</b>
+    <ul>
+        <li>controller 1</li>
+        <li>controller 2</li>
+        
+    </ul>
+  </p>
+    <b>characters</b>
+  <p id="winner">
+      <b>characters</b>
+    <ul>
+        <li>lion king </li>
+        <li>peeking mind</li>
+        
+    </ul>
+  </p>
+  <button onclick="choosepair();">choose a pair</button>
+   <script>
+    let winner=document.getElementById("winner");
+    let players=["player 1", "plater 2"];
+    let controllers=["controller 1", "controller 2 (oldie)"];
+    let characters=[{name:"lion king", image:"login.jpg"},{name:"peeking mind", image:"18.jpg"}];
+    let player1 = math.floor(random() * players.length);
+    var player2 = math.floor(random() * players.length);
+    while (player1 == player2){
+        player2 = mathfloor(math.random() *  players.length);
+    }
+    
+    let controller1 = math.floor(math.random() * controllers.length);
+    let controller2 =1 - controller1;
+   </script>
+</body>
+</html>

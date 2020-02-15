@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fmt.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Summit</title>
+</head>
+<body>
+    <div class="log"><style>.log{background: rgb(218, 185, 218); color: whitesmoke; text-align: center; border-radius: 30px;} </style>
+        <marquee><h2>logged into  account no.435356545 name:SSEMBATYA SHAFIC</h2></marquee>
+    </div>
+    <div class="main ">
+    <div class="tab d-block">
+          <button class="tablinks" onclick="openpart(event, 'Home')" id="defaultOpen">Home</button>
+          <button class="tablinks" onclick="openpart(event, 'my balance')">My balance</button>
+          <button class="tablinks" onclick="openpart(event, 'Branches and ATM')">Branches and ATM</button>
+          <button class="tablinks" onclick="openpart(event, 'loans')">Loans </button>
+          <button class="tablinks" onclick="openpart(event, 'contact us')">Contact us</button>
+          <button class="tablinks" onclick="openpart(event, 'withdraw')">Withdraw</button>
+          <button class="tablinks" onclick="openpart(event, 'deposit')">Deposit</button>
+    </div>
+    <div class="right d-block">
+        &nbsp;&nbsp;
+        <div id="Home" class="tabcontent">
+            <h3>Welcome to Summit Bank</h3><br><br>   
+            <h4>transfers</h4> 
+            <table border="2">
+                    <tr><th>Currency</th><th>Buying</th><th>Selling</th></tr>
+                    <tr><td>Dollar</td><td>3500/=</td><td>3000/=</td></tr>
+                    <tr><td>Pound</td><td>4500/=</td><td>4900/=</td></tr>
+                    <tr><td>Euro</td><td>3100/=</td><td>3200/=</td></tr>
+                    <tr><td>Yien</td><td>2500/=</td><td>2700/=</td></tr>
+                    <tr><td>Kenyan </td><td>50/=</td><td>100/=</td></tr>
+                </table>
+        </div>
+        <div id="my balance" class="tabcontent">
+            <fieldset>
+                <legend><h3>your balance appears here</h3></legend>
+                    <H4>account no. 435356545</H4>
+                    <H4>holders name: SSEMBATYA SHAFIC</H4><BR>
+                    <H4>Your summit bank acount balance is: 250,000/=</H4>
+            </fieldset>
+        </div>
+        <div id="Branches and ATM" class="tabcontent">
+              <H3>Here we bring you all our branches and their location</H3>
+              <h4>Feel free to visit any that is near to you for any assistance</h4>
+              <table border="2">
+                  <tr><th>BRANCH</th><th>LOCATION</th></tr>
+                  <tr><td>KAYABWE</td><td>OPPOSITE NEW TAX PARK</td></tr>
+                  <tr><td>NATEETE</td><td>BESIDES NATEETE FURNITURE STORE</td></tr>
+                  <tr><td>KAMPALA</td><td>HARM BUILDING NEW TAX PARK FLOW 05</td></tr>
+                  <tr><td>MASAKA</td><td>LEFT OF AGAKAN BUILDING</td></tr>
+                  <tr><td>RIRA</td><td>FACING KABERAMAIDO TAX PARK</td></tr>
+              </table>
+              <h4>NOTE: all our branches have ATM machines</h4>
+        </div>
+        <div id="loans" class="tabcontent">
+               <form>
+                   <fieldset>
+                       <legend>LOAN APPLICATION FORM</legend>
+                  <div class="all" style="display: flex;"> <div class="out"> <p>First name</p>
+                    <input type="text" name=""value>
+                    <p>Other name</p>
+                    <input type="text" name=""value>
+                    <p>Loan type</p>
+                    <input type="radio" name="eg" value>business<br>
+                    <input type="radio" name="eg" value>personal<br>
+                    <input type="radio" name="eg" value>agriculture<br></div>
+                   <div class="in"> <p>National ID Number</p>
+                    <input type="text" name=""value>
+                    <p>Account number</p>
+                    <input type="text" name=""value>
+                    <p>Loan amount</p>
+                    <input type="number" name=""value>
+                    <input type="submit" value="submit form"><br>
+                    <input type="reset" value="cancel"></div></div>
+                    
+                   </fieldset>
+               </form>
+        </div>
+        <div id="contact us" class="tabcontent">
+            <h3>For more inquiries about summit bank please feel free to call our customer care no:0344555555 toll free</h3>
+            <h4>You can also email us at: summitsmith842@gmail.com</h4>
+            <h5>(by reaching the above contacts you will be connecting directly with summit bank head offices)</h5>
+        </div>
+        <div id="withdraw" class="tabcontent">
+                <form >
+                        <p>
+                            <label>amount to withdraw:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <input type="number" name="number" value=""><br>
+                        </p>
+                        <p>
+                            <input type="submit" value="get code"><br>
+                        
+                        <input type="reset" class="btn" type="reset" name="cancel" >
+                            </p>
+                        
+                    </form>
+        </div>
+        <div id="deposit" class="tabcontent">
+        <h3>Welcome to Summit bank cent deposit</h3>
+        <form>
+                <fieldset>
+                  <legend>Depost with ease:</legend>
+                  ammount:<br>
+                  <input type="number" placeholder="enter ammount to deposit" name="firstname" value=""><br>
+                  deposit to:<br>
+                  <input type="radio" name="name" value="">mine<br>
+                  <input type="radio" name="name" value="">another<br>
+                  for another specify the account number:<br>
+                  <input type="number" placeholder="insert another person's account number" name="" value=""><br>
+                  <input type="submit" value="get deposit code"><br>
+                  <input type="reset" value="cancel">
+                </fieldset>
+              </form>
+                        
+    
+        </div>
+    </div>    
+    </div>
+
+    <script>
+        function openpart(evt, partName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(partName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
